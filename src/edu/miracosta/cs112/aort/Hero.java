@@ -42,17 +42,14 @@ public class Hero extends GameCharacter {
                 //other character receives health
                 // this character loses health
                 other.mHealthPoints += 5 * other.mLevel;
-                other.mMagic -= 5 * other.mLevel;
                 System.out.println("case 0");
                 break;
             case 1:
                 other.mMagic += 5 * other.mLevel;
-                other.mMagic -= 5 * other.mLevel;
                 System.out.println("case 1");
                 break;
             case 2:
                 other.mGold += 5 * other.mLevel;
-                other.mGold -= 5 * other.mLevel;
                 System.out.println("case 2");
                 break;
             case 3:
@@ -60,14 +57,9 @@ public class Hero extends GameCharacter {
                 other.mGold += 100;
                 other.mMagic += 100;
                 other.mHealthPoints += 100;
-                other.mLevel --;
-                other.mGold -= 100;
-                other.mMagic -= 100;
-                other.mHealthPoints -= 100;
                 System.out.println("case 3");
                 break;
             case 4:
-                other.mHealthPoints = mLevel * 100;
                 other.mHealthPoints = mLevel * 100;
                 System.out.println("case 4");
                 break;
